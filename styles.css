@@ -55,3 +55,13 @@ body {
     height: 72px;
 }
 
+button {
+    border-radius: 16px;
+    background-color: #0ea5e9;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: .9em;
+    cursor: pointer;
+    padding: 8px 24px;
+}
