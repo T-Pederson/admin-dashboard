@@ -6,17 +6,21 @@ body {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
 .container {
     display: grid;
-    grid-template: 1fr 4fr / 1fr 3fr;
+    grid-template: 1fr 5fr / 1fr 3.5fr;
     height: 100vh;
 }
 
 .navbar {
     grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(12, auto);
     background-color: #0ea5e9;
     color: white;
     font-weight: bold;
@@ -24,44 +28,105 @@ body {
     padding: 20px;
 }
 
-.navbar p {
-    margin: 0;
-}
-
 .icon {
     width: 24px;
     cursor: pointer;
+    justify-self: center;
 }
 
 #dashboard {
     width: 52px;
 }
 
-.header {
-
+.dashboard {
+    font-size: 1.5em;
 }
 
-.header p {
-    margin: 0;
+.header {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    padding: 0 48px;
 }
 
 .avatar_sm {
     border-radius: 50%;
     height: 48px;
+    cursor: pointer;
 }
 
 .avatar_lg {
     border-radius: 50%;
     height: 72px;
+    cursor: pointer;
 }
 
 button {
-    border-radius: 16px;
+    border-radius: 20px;
     background-color: #0ea5e9;
     color: white;
     font-weight: bold;
     border: none;
     font-size: .9em;
     cursor: pointer;
-    padding: 8px 24px;
+    padding: 10px 0;
+    width: 88px;
+}
+
+#search {
+    background-color: #ddd;
+    border-radius: 16px;
+    border: none;
+    padding: 8px 8px 8px 12px;
+    width: 500px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1.2em;
+    width: 1.2em;
+    background: url(images/clear.svg);
+}
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.greeting {
+    display: flex;
+    gap: 16px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.default_greeting {
+    font-size: .8em;
+    padding-bottom: 8px;
+}
+
+.current_user {
+    font-size: 1.5em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 24px;
+}
+
+.content {
+    background-color: #ddd;
 }
