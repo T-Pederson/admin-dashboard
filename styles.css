@@ -10,11 +10,29 @@
     margin: 0;
 }
 
-.navbar img {
+.icon {
     width: 20px;
     cursor: pointer;
 }
 
 #dashboard {
     width: 40px;
+}
+
+.header {
+
+}
+
+.header p {
+    margin: 0;
+}
+
+.avatar_sm {
+    border-radius: 50%;
+    height: 48px;
+}
+
+.avatar_lg {
+    border-radius: 50%;
+    height: 72px;
 }
