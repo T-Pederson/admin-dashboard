@@ -17,7 +17,7 @@ a {
 
 .container {
     display: grid;
-    grid-template: 1fr 6fr / 1fr 3.5fr;
+    grid-template: 200px auto / 300px auto;
     height: 100vh;
 }
 
@@ -83,7 +83,7 @@ button {
     border-radius: 16px;
     border: none;
     padding: 8px 8px 8px 12px;
-    width: 500px;
+    flex: 0 1 500px;
 }
 
 #search:focus {
