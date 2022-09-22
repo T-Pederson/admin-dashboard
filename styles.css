@@ -15,6 +15,11 @@ a {
     color: black;
 }
 
+h2, 
+h3 {
+    margin: 0;
+}
+
 .container {
     display: grid;
     grid-template: 200px auto / 300px auto;
@@ -157,4 +162,89 @@ button {
 .content {
     background-color: #eee;
     box-shadow: inset 0 3px 6px rgba(141, 141, 141, 0.26);
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    padding: 20px 20px 40px 20px;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 40px;
+}
+
+.projects p {
+    color: #777;
+}
+
+.project_cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-rows: 250px;
+}
+
+.card,
+.trending_card,
+.announcements_card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.card {
+    border-left: 8px solid rgb(255, 187, 0);
+    display: grid;
+}
+
+.like_share_follow {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+    margin-top: 8px;
+    align-items: end;
+}
+
+.announcements_trending {
+    display: grid;
+    grid-template-rows: repeat(2, 400px);
+    gap: 40px;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 40px;
+}
+
+.announcements p {
+    color: #777;
+}
+
+.announcements_card {
+    height: 315px;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: 40px;
+}
+
+.trending_card {
+    height: 301px;
+    display: grid;
+    grid-template-columns: 48px auto;
+    gap: 16px;
+}
+.trending_card a {
+    align-self: center;
+    width: 48px;
+    height: 48px;
+}
+
+.trending_text {
+    align-self: center;
+}
+
+.trending_text p:nth-child(2) {
+    color: #777;
 }
