@@ -17,7 +17,7 @@ a {
 
 .container {
     display: grid;
-    grid-template: 1fr 5fr / 1fr 3.5fr;
+    grid-template: 1fr 6fr / 1fr 3.5fr;
     height: 100vh;
 }
 
@@ -75,6 +75,7 @@ button {
     font-size: .9em;
     padding: 10px 0;
     width: 88px;
+    cursor: pointer;
 }
 
 #search {
@@ -94,12 +95,22 @@ button {
     height: 1.2em;
     width: 1.2em;
     background: url(images/clear.svg);
+    cursor: pointer;
 }
 
 .search_bar {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.search_bar button {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 8px;
+    padding: 0;
+    cursor: pointer;
 }
 
 .notifications {
@@ -114,9 +125,11 @@ button {
 }
 
 .greeting {
-    display: flex;
+    display: grid;
     gap: 16px;
     font-weight: bold;
+    grid-template: auto auto / auto auto;
+    justify-content: start;
     align-items: center;
 }
 
